@@ -9,7 +9,7 @@ function Home({ user, setUser }) {
   const navigate = useNavigate();
   const fetchBlogData = async () => {
     try {
-      const res = await fetch("http://localhost:3000/blog/blogs", {
+      const res = await fetch("https://blogsphere-server-v5il.onrender.com/blog/blogs", {
         method: "get",
         credentials: "include",
         headers: {
@@ -55,7 +55,7 @@ function Home({ user, setUser }) {
                 <Row>
                   <Col>
                     <img
-                      src="http://localhost:3000/images/cofeelap.jpeg"
+                      src="https://blogsphere-server-v5il.onrender.com/images/cofeelap.jpeg"
                       alt="coffeelap.jpg"
                       className="coffeelap"
                     ></img>
@@ -106,7 +106,7 @@ function Home({ user, setUser }) {
         <>
           <div className="gif-container">
             <img
-              src="http://localhost:3000/images/welcome.gif"
+              src="https://blogsphere-server-v5il.onrender.com/images/welcome.gif"
               alt="Hello"
               className="hello-gif"
             />

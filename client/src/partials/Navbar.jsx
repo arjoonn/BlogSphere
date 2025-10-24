@@ -6,7 +6,7 @@ function NavBar({ user, setUser }) {
   const usenavigate = useNavigate();
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:3000/user/logout", {
+      await fetch("https://blogsphere-server-v5il.onrender.com/user/logout", {
         credentials: "include",
       });
       localStorage.removeItem("user");

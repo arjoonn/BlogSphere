@@ -5,9 +5,9 @@ import './Style/View.css'
 
 function View() {
   const { id } = useParams();
-  const allBlogurl = `http://localhost:3000/blog/blogs/${id}`;
-  const commentUrl = `http://localhost:3000/blog/comment/${id}`;
-  const getCommentUrl = `http://localhost:3000/blog/comments/${id}`;
+  const allBlogurl = `https://blogsphere-server-v5il.onrender.com/blog/blogs/${id}`;
+  const commentUrl = `https://blogsphere-server-v5il.onrender.com/blog/comment/${id}`;
+  const getCommentUrl = `https://blogsphere-server-v5il.onrender.com/blog/comments/${id}`;
   const [blogData, setBlogData] = useState(null);
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState([]);
@@ -84,7 +84,7 @@ function View() {
         <div className="authorSection">
           <img
             className="rounded-circle me-3"
-            src={`http://localhost:3000${blogData.createdBy.profileImage}`}
+            src={`https://blogsphere-server-v5il.onrender.com${blogData.createdBy.profileImage}`}
             width={"40px"}
           ></img>
           <p>{blogData.createdBy.fullname}</p>
@@ -112,7 +112,7 @@ function View() {
         {comments.map((c, index) => (
           <div key={index} className="commentItem">
             <img
-              src={`http://localhost:3000${blogData.createdBy.profileImage}`}
+              src={`https://blogsphere-server-v5il.onrender.com${blogData.createdBy.profileImage}`}
               alt="avatar"
             />
             <div>

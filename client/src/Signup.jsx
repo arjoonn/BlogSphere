@@ -22,7 +22,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/user/signup", {
+      const res = await fetch("https://blogsphere-server-v5il.onrender.com/user/signup", {
         method: "post",
         headers: {
           "Content-Type": "application/json",

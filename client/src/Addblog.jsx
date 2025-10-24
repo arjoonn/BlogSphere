@@ -22,7 +22,7 @@ function Addblog() {
     e.preventDefault();
     
     try {
-      const res = await fetch("http://localhost:3000/blog/add-new", {
+      const res = await fetch("https://blogsphere-server-v5il.onrender.com/blog/add-new", {
         method: "POST",
         headers:{
           'Content-Type':'application/json'

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Style/Blogs.css";
 
 function Blogs() {
-  const allBlogurl = "http://localhost:3000/blog/blogs";
+  const allBlogurl = "https://blogsphere-server-v5il.onrender.com/blog/blogs";
   const [blogs, setBlogs] = useState([]);
   const usenavigate = useNavigate();
 

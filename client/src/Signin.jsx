@@ -22,7 +22,7 @@ function Signin({ setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/user/signin", {
+      const res = await fetch("https://blogsphere-server-v5il.onrender.com/user/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
