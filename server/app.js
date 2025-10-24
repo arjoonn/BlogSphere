@@ -12,7 +12,7 @@ const { checkForAuthenticationCookie } = require('./middleware/authentication');
 
 
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: 'https://blogsphere-client-kle9.onrender.com', 
     credentials: true
 }));        
 
