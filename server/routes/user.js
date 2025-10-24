@@ -21,7 +21,7 @@ router.post('/signin',async(req,res)=>{
         const user = await User.findOne({ email }).select('-password'); // exclude password
         res.status(200).cookie('token',token,{
             httpOnly:true,
-            secure :false,
+            secure :true,
         }).json({message:'Login Successfull',user,token})
     }catch(error){
         console.log('error',error);
