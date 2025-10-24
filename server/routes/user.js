@@ -22,6 +22,7 @@ router.post('/signin',async(req,res)=>{
         res.status(200).cookie('token',token,{
             httpOnly:true,
             secure :true,
+            sameSite: "None",
         }).json({message:'Login Successfull',user,token})
     }catch(error){
         console.log('error',error);
