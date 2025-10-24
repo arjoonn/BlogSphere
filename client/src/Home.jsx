@@ -16,6 +16,11 @@ function Home({ user, setUser }) {
           "Content-Type": "application/json",
         },
       });
+
+       if (!res.ok) {
+        throw new Error(`Failed to fetch blogs: ${res.status}`);
+      }
+
       const body = await res.json();
       setBlogs(body.blogs);
     } catch (error) {
