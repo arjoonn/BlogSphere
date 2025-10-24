@@ -1,0 +1,73 @@
+/* Signin container */
+.signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+/* Inner Signin form card */
+.signInform {
+  background: #f8f4f4;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Signin title */
+.signInform-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Signin form items */
+.signinItem {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Signin input fields */
+.signinItem .form-control {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #f8f6f6;
+  transition: all 0.3s ease;
+}
+
+/* Input focus for Signin */
+.signinItem .form-control:focus {
+  background: #f8f6f6;
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  outline: none;
+}
+
+/* Signin button */
+.signIn-btn {
+  width: 60%;
+  padding: 12px;
+  border-radius: 25px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Signin button hover */
+.signIn-btn:hover {
+  background: #333;
+  transform: scale(1.05);
+}

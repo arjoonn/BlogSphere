@@ -1,0 +1,73 @@
+/* Signup container */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+/* Inner Signup form card */
+.signUpform {
+  background: #f8f4f4;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Signup title */
+.signupform-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Signup form items */
+.signupItem {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Signup input fields */
+.signupItem .form-control {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #f8f6f6;
+  transition: all 0.3s ease;
+}
+
+/* Input focus for Signup */
+.signupItem .form-control:focus {
+  background: #f8f6f6;
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Signup button */
+.signUp-btn {
+  width: 60%;
+  padding: 12px;
+  border-radius: 25px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Signup button hover */
+.signUp-btn:hover {
+  background: #333;
+  transform: scale(1.05);
+}
