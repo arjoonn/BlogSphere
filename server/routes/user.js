@@ -18,7 +18,7 @@ router.post('/signin',async(req,res)=>{
     const { email,password } = req.body;
     try{
         const token = await User.matchPasswordAndGenerateToken(email,password)
-        const user = await User.findOne({ email }).select('-password'); // exclude password
+        const user = await User.findOne({ email }).select('-password'); 
         res.status(200).cookie('token',token,{
             httpOnly:true,
             secure :true,

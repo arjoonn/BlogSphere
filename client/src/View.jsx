@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button, Form, InputGroup } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import './Style/View.css'
+import DeleteBlog from "./DeleteBlog";
 
 function View() {
   const { id } = useParams();
@@ -71,6 +72,7 @@ function View() {
     <>
       <div className="viewContainer">
         <h1 className="blogTitle">{blogData.title}</h1>
+        <DeleteBlog id={id}/>
         <img
           src={blogData.coverImageURL}
           style={{ width: "800px", margin: "20px auto", display: "block" }}
